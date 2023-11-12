@@ -270,7 +270,7 @@ function isPalindrome($string) {
     }
 }
 
-$string = "rcecar";
+$string = "abnhdc";
 if (isPalindrome($string)) {
     echo "$string là chuỗi palindrome. <br>";
 } else {
@@ -583,7 +583,7 @@ $child ="Bài hát này";
 if (isSubstring($parent , $child)) {
     echo "\"$child\" là chuỗi con của \"$parent\" <br>";
 } else {
-    echo "\"$child\" không phải là chuỗi con của \"$$parent\" ";
+    echo "\"$child\" không phải là chuỗi con của \"$parent\" ";
 }
 ?>
 
