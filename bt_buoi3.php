@@ -191,15 +191,13 @@ function insertElementAtPosition($array, $element, $position) {
     }
 }
 
-// Mảng ban đầu
-$originalArray = [1, 2, 3, 4, 5];
+$array = [1, 2, 3, 4, 5];
 
-// Phần tử cần chèn
-$elementToInsert = 99;
+$elementToInsert = 9;
 
-// Vị trí chèn 
 $positionToInsert = 2;
-$arrayAfterInsertion = insertElementAtPosition($originalArray, $elementToInsert, $positionToInsert);
+
+$arrayAfterInsertion = insertElementAtPosition($array, $elementToInsert, $positionToInsert);
 echo "Mảng sau khi chèn phần tử $elementToInsert vào vị trí $positionToInsert: " . implode(', ', $arrayAfterInsertion) ."<br>";
 ?>
 
@@ -229,9 +227,9 @@ function findElementPosition($array, $element) {
     }
     return "Phần tử không tồn tại trong mảng.";
 }
-$dataArray = ["a", "k", "l", "m", "x"];
+$array = ["a", "k", "l", "m", "x"];
 $elementToFind = "v";
-$position = findElementPosition($dataArray, $elementToFind);
+$position = findElementPosition($array, $elementToFind);
 echo "Vị trí của phần tử \"$elementToFind\" trong mảng là: $position <br>";
 ?>
 
@@ -333,14 +331,14 @@ function addToEnd($array, $element) {
     return $array;
 }
 
-$originalArray = [1, 2, 4, 5];
+$array = [1, 2, 4, 5];
 $elementToAdd = 10;
 
-$arrayAfterAddingToBeginning = addToBeginning($originalArray, $elementToAdd);
+$arrayAfterAddingToBeginning = addToBeginning($array, $elementToAdd);
 
 echo "Mảng sau khi thêm phần tử $elementToAdd vào đầu: " . implode(', ', $arrayAfterAddingToBeginning) . "<br>";
 
-$arrayAfterAddingToEnd = addToEnd($originalArray, $elementToAdd);
+$arrayAfterAddingToEnd = addToEnd($array, $elementToAdd);
 
 echo "Mảng sau khi thêm phần tử $elementToAdd vào cuối: " . implode(', ', $arrayAfterAddingToEnd) . "<br>";
 ?>
